@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--评论Item-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+    <ImageView
+            android:id="@+id/commentListViewItem_userHeader_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ff676767"
+            android:visibility="visible"/>
+
+    <TextView
+            android:id="@+id/commentListViewItem_userName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/commentListViewItem_userHeader_img"
+            android:layout_marginLeft="8dp"
+            android:text="小明同学"
+            android:textSize="15sp"
+            android:textColor="#454545"/>
+
+    <TextView
+            android:id="@+id/commentListViewItem_createTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/commentListViewItem_userName_tv"
+            android:layout_below="@+id/commentListViewItem_userName_tv"
+            android:layout_marginTop="8dp"
+            android:text="12:20"
+            android:textSize="13sp"
+            android:textColor="#ffff7c66"/>
+
+    <TextView
+            android:id="@+id/commentListViewItem_commentContent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/commentListViewItem_userName_tv"
+            android:layout_below="@+id/commentListViewItem_createTime_tv"
+            android:layout_marginTop="10dp"
+            android:text="这是评论的内容"
+            android:textSize="15sp"
+            android:textColor="#ff2d2d2d"/>
+
+    <Button
+            android:id="@+id/commentListViewItem_reply_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="回复"
+            android:textSize="12sp"
+            android:textColor="#ff2d2d2d"/>
+
+</RelativeLayout>

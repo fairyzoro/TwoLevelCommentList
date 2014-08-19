@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.aboo.twolevelcommentlist.app.MainActivity">
+
+    <ExpandableListView
+            android:id="@+id/main_commentList_elv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_above="@+id/main_comment_btn"/>
+
+    <Button
+            android:id="@+id/main_comment_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:text="评论"
+            android:textSize="20sp"
+            android:textColor="#ff2d2d2d"/>
+
+</RelativeLayout>
